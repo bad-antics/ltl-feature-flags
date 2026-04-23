@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_feature_flags
+
+import std::io
+use ltl_feature_flags as lib
+
+fn main() {
+    io::println("ltl_feature_flags demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
